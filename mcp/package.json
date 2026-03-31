@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "Structured study guides for DS, ML & GenAI topics",
   "private": true,
-  "scripts": { "build": "tsc", "dev": "ts-node api/index.ts" },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.39.0",
-    "@modelcontextprotocol/sdk": "^1.10.0",
-    "@vercel/node": "^5.0.0"
+    "@anthropic-ai/sdk": "^0.39.0"
   },
   "devDependencies": {
+    "@vercel/node": "^5.0.0",
     "@types/node": "^20.0.0",
-    "typescript": "^5.0.0",
-    "ts-node": "^10.9.0"
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "vercel-build": "",
+    "build": "tsc",
+    "dev": "ts-node api/index.ts"
   }
 }
